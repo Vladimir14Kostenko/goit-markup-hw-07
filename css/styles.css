@@ -239,6 +239,7 @@ a {
 
 /* ---------------------Модальное окно-------------------- */
 .backdrop {
+  visibility: visible;
   position: fixed;
   top: 0;
   left: 0;
@@ -288,7 +289,6 @@ a {
   justify-content: center;
   align-items: center;
 
- 
   margin-left: auto;
   width: 30px;
   height: 30px;
@@ -362,7 +362,7 @@ a {
 }
 
 .modal-box__input:focus,
-.modal-box__input:focus + .modal-icon {
+.modal-box__input:focus + .modal-box__icon {
   fill: var(--accent-color);
   border-color: var(--accent-color);
   outline: none;
@@ -416,7 +416,6 @@ a {
   color: var(--accent-color);
 }
 
-/* ------------------Чекбокс---------------- */
 .modal-policy {
   display: flex;
   justify-content: center;
@@ -636,7 +635,7 @@ a {
 
 .comand__items {
   margin-right: 30px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -681,7 +680,7 @@ a {
   margin-right: 10px;
 }
 
-.icon-logo-item:last-child {
+.social__item:last-child {
   margin-right: 0;
 }
 
@@ -699,7 +698,7 @@ a {
     color 250ms var(--transition-timing-function);
 }
 
-.social___icon {
+.social__icon {
   fill: currentColor;
 }
 
@@ -1043,20 +1042,15 @@ a {
 }
 
 .grid__link {
-  text-decoration: none;
   display: block;
 
-   transition: box-shadow 250ms var(--transition-timing-function);
+  transition: box-shadow 250ms var(--transition-timing-function);
 }
 
 .grid__link:hover,
 .grid__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.photo:nth-child(3n) {
-  margin-right: 0;
 }
 
 .grid__link:hover .thumb__text,
@@ -1067,7 +1061,6 @@ a {
 .grid__item:nth-child(3n) {
   margin-right: 0;
 }
-
 
 .grid__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
@@ -1092,7 +1085,7 @@ a {
   transition: transform 250ms var(--transition-timing-function);
 }
 
-.photo-thumb-text > p {
+.thumb__text > p {
   padding: 63px 24px;
 
   font-size: 18px;
@@ -1107,7 +1100,6 @@ a {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-
 .aside__items {
   margin-bottom: 4px;
   color: var(--title-text-color);
