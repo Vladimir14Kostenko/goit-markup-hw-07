@@ -10,3 +10,10 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+%container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
